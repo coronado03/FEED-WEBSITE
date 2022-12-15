@@ -1,6 +1,8 @@
 import Link from "next/link";
-import { useContext } from "react";
+import { Menu, Transition } from '@headlessui/react'
+import { Fragment, useContext } from "react";
 import { UserContext } from "../lib/context";
+
 
 export default function Navbar() {
 
@@ -17,18 +19,28 @@ export default function Navbar() {
 
                 {username && (
                     <>
-                    <div className="hidden lg:flex">
-                        <li>
-                            <Link href="/admin">
-                                <button className="p-2 border text-sm bg-white hover:bg-gray-900 hover:text-white rounded-md transition-colors duration-300">Write Posts</button>
-                            </Link>
-                        </li>
-                    </div>
 
-                        <li className="ml-12">
-                        <Link href={`/${username}`}>
-                                <img className="rounded-full w-1/2 hover:brightness-125 transition-all duration-200 ease-out" src= {user?.photoURL} />
-                            </Link>
+                        <li className="">
+                            <Menu>
+                                <Menu.Button>
+                                    <img className="rounded-full w-1/2 hover:brightness-125 transition-all duration-200 ease-out" src= {user?.photoURL} /> 
+                                 </Menu.Button>
+
+                                 <Menu.Items className="absolute right-0 mt-2 w-44 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <Menu.Item>
+                                    <Link href={username}>
+
+                                        <button className="group flex w-full items-center rounded-md px-2 py-2 text-center text-sm hover:bg-slate-200 transition-colors duration-300">User Profile</button>
+                                    </Link>
+                                    </Menu.Item>
+                                    <Menu.Item>
+                                    <Link href="/admin">
+                                        <button className="group flex w-full items-center rounded-md px-2 py-2 text-center text-sm hover:bg-slate-200 transition-colors duration-300">Write Posts</button>
+                                    </Link>
+                                    </Menu.Item>
+                                 </Menu.Items>
+                                 
+                            </Menu>
                         </li>
                     </>
                 )}

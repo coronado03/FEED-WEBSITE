@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Menu, Transition } from '@headlessui/react'
 import { Fragment, useContext } from "react";
 import { UserContext } from "../lib/context";
+import { auth } from "../lib/firebase";
 
 
 export default function Navbar() {
@@ -37,6 +38,9 @@ export default function Navbar() {
                                     <Link href="/admin">
                                         <button className="group flex w-full items-center rounded-md px-2 py-2 text-center text-sm hover:bg-slate-200 transition-colors duration-300">Write Posts</button>
                                     </Link>
+                                    </Menu.Item>
+                                    <Menu.Item>
+                                        <button className="group flex w-full items-center rounded-md px-2 py-2 text-center text-sm hover:bg-slate-200 transition-colors duration-300" onClick={() => auth.signOut()}>Sign Out</button>
                                     </Menu.Item>
                                  </Menu.Items>
                                  

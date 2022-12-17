@@ -30,8 +30,10 @@ export async function getUserWithUsername(username) {
   const usersRef = collection(firestore, 'users');
   const q = query(usersRef, where('username', '==', username), limit(1));
   const userDoc = (await getDocs(q)).docs[0];
-  return userDoc
-}
+  return userDoc;
+};
+
+
 export function postToJson(doc){
 
   const data = doc.data();

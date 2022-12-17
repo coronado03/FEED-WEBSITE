@@ -82,7 +82,7 @@ export default function Post(props) {
           <AuthCheck
             fallback={
               <Link href="/enter">
-                <button>💗 Sign Up</button>
+                <button className="">❤️</button>
               </Link>
             }
           >
@@ -95,6 +95,15 @@ export default function Post(props) {
             <button className="self-center w-1/4 text-black p-2 border text-sm bg-white hover:bg-gray-900 hover:text-white rounded-md transition-colors duration-300">Edit Post</button>
           </Link>
         )}
+
+          <AuthCheck
+            fallback={
+              <Link href="/enter">
+                <button className="mt-5 py-3 px-6 rounded rounded-md hover:underline hover:bg-black text-white  transition-all duration-500">Log in</button>
+              </Link>
+            }
+          />
+
       </aside>
     </main>
   );

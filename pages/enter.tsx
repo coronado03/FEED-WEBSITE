@@ -3,15 +3,21 @@ import { signInWithPopup, signOut} from 'firebase/auth';
 import { useCallback, useContext, useEffect, useState } from 'react';
 import { UserContext } from '../lib/context';
 import { doc, getDoc, writeBatch } from 'firebase/firestore';
-
 import debounce from 'lodash.debounce';
 
 import { GrGoogle } from 'react-icons/gr';
+import { useRouter } from 'next/router';
 
 
 export default function EnterPage (props) {
-
     const { user, username } = useContext(UserContext)
+    
+    const router = useRouter()
+
+    //Redirects to home at log in.
+    if (user) {
+        router.push("/")
+    }
 
     return(
         <main>
@@ -53,7 +59,9 @@ function SignOutButton() {
 
     return (
         <>
-            <button className='bg-white p-4' onClick={() => auth.signOut()}>Sign Out</button>
+            <div className='flex flex-col w-screen mt-5'>
+                <button className='flex flex-row gap-x-4 bg-white py-2 px-4 rounded-md items-center self-center w-full' onClick={() => auth.signOut()}>Sign Out</button>
+            </div>
         </>
     )
     

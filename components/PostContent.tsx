@@ -1,9 +1,18 @@
+import { collection, getDocs, getFirestore, onSnapshot, query, where } from "firebase/firestore";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 
 
-
 export default function PostContent({ post }) {
+  const db = getFirestore()
+  let getProfilePicture = async () => {
+    const userRef = query(collection(db, "users"), where("username", "==", post.username))
+    const querySnapshot = await getDocs(userRef);
+    return querySnapshot;
+
+  }
+
+console.log(getProfilePicture)
 
 
   console.log(post)

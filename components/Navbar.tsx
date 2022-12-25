@@ -27,7 +27,7 @@ export default function Navbar() {
                                     <img className="rounded-full w-1/2 hover:brightness-125 transition-all duration-200 ease-out" src= {user?.photoURL} /> 
                                  </Menu.Button>
 
-                                 <Menu.Items className="absolute right-0 mt-2 w-44 origin-top-right divide-y divide-[#28272A] rounded-md bg-[#1A1A1C] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                 <Menu.Items className="absolute right-0 mt-2 w-44 origin-top-right divide-y text-white divide-[#28272A] rounded-md bg-[#1A1A1C] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                     <Menu.Item>
                                     <Link href={username}>
 

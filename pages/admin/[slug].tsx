@@ -17,7 +17,7 @@ import toast from 'react-hot-toast';
 export default function AdminPostEdit(props) {
   return (
     <AuthCheck>
-      <PostManager />
+      <PostManager/>
     </AuthCheck>
   );
 }
@@ -28,28 +28,25 @@ function PostManager() {
   const router = useRouter();
   const { slug }: any  = router.query;
 
-  // const postRef = firestore.collection('users').doc(auth.currentUser.uid).collection('posts').doc(slug);
   const postRef = doc(getFirestore(), 'users', auth.currentUser.uid, 'posts', slug)
   const [post] = useDocumentData(postRef);
 
 
 
-  // const postRef = firestore.collection('users').doc(auth.currentUser.uid).collection('posts').doc(slug);
-
   
   return (
-    <main className="mt-5 text-white">
+    <main className="grid md:grid-cols-6 text-white">
       {post && (
         <>
-          <section className='flex flex-col items-center'>
+          <section className='col-span-5 flex flex-col items-center'>
             <h1 className='text-4xl'>{post.title}</h1>
             <p className='text-2xl'>ID: {post.slug}</p>
 
             <PostForm postRef={postRef} defaultValues={post} preview={preview} />
           </section>
 
-          <aside>
-            <h3>Tools</h3>
+          <aside className='flex flex-col'>
+            <h3 className='text-center'>Tools</h3>
             <button onClick={() => setPreview(!preview)}>{preview ? 'Edit' : 'Preview'}</button>
             <Link href={`/${post.username}/${post.slug}`}>
               <button className="btn-blue">Live view</button>
@@ -80,9 +77,9 @@ function PostForm({ defaultValues, postRef, preview }) {
   };
 
   return (
-    <form onSubmit={handleSubmit(updatePost)}>
+    <form className="w-full text-center" onSubmit={handleSubmit(updatePost)}>
       {preview && (
-        <div className="card">
+        <div className="flex flex-col">
           <ReactMarkdown>{watch('content')}</ReactMarkdown>
         </div>
       )}
@@ -90,7 +87,7 @@ function PostForm({ defaultValues, postRef, preview }) {
       <div className={preview}>
         <ImageUploader />
 
-        <textarea className='resize-none text-black bg-none	'
+        <textarea className='resize-none w-9/12 h-2/5	 text-white bg-[#242424] border border-[#262626] rounded'
           {...register("content", {
             maxLength: { value: 20000, message: 'content is too long' },
             minLength: { value: 10, message: 'content is too short' },
@@ -105,7 +102,7 @@ function PostForm({ defaultValues, postRef, preview }) {
           <label>Published</label>
         </fieldset>
 
-        <button type="submit" className="btn-green" disabled={!isDirty || !isValid}>
+        <button type="submit" className="py-2 px-6 rounded-md underline hover:bg-black text-white  transition-all duration-500" disabled={!isDirty || !isValid}>
           Save Changes
         </button>
       </div>

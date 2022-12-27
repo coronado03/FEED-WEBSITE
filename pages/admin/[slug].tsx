@@ -46,10 +46,10 @@ function PostManager() {
           </section>
 
           <aside className='flex flex-col'>
-            <h3 className='text-center'>Tools</h3>
-            <button onClick={() => setPreview(!preview)}>{preview ? 'Edit' : 'Preview'}</button>
+            <h3 className='text-center text-xl underline'>Tools</h3>
+            <button className="hover:bg-[#28272A] rounded-md transition-all delay-75" onClick={() => setPreview(!preview)}>{preview ? 'Edit' : 'Preview'}</button>
             <Link href={`/${post.username}/${post.slug}`}>
-              <button className="btn-blue">Live view</button>
+              <button className="hover:bg-[#28272A] rounded-md transition-all delay-75">Live view</button>
             </Link>
             <DeletePostButton postRef={postRef} />
           </aside>
@@ -123,7 +123,7 @@ function DeletePostButton({ postRef }) {
   };
 
   return (
-    <button className="btn-red" onClick={deletePost}>
+    <button className="hover:bg-[#9D2934] rounded-md transition-all delay-75" onClick={deletePost}>
       Delete
     </button>
   );

@@ -14,10 +14,10 @@ export default function EnterPage (props) {
     
     const router = useRouter()
 
-    //Redirects to home at log in.
-    if (user) {
-        router.push("/")
-    }
+    //Redirects to home at log in. WIP
+    //if (user) {
+    //   router.push("/")
+    //}
 
     return(
         <main>

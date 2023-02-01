@@ -138,21 +138,27 @@ function UsernameForm() {
 
     return (
         !username && (
-            <section className='text-white'>
-                <h3>Choose Username</h3>
-                <form onSubmit={onSubmit}>
+            <section className='flex flex-col items-center text-white mt-5'>
+                <h3 className='text-4xl'><strong>Choose username</strong></h3>
+                <form className="mt-5" onSubmit={onSubmit}>
 
-                    <input className='text-black' name="username" placeholder="username" value={formValue} onChange={onChange} />
+                    <div className='flex flex-row gap-x-5'>
+                        <input className='text-black' name="username" placeholder="username" value={formValue} onChange={onChange} />
+
+                        <button type="submit" className={''} disabled={!isValid}>
+                            Choose
+                        </button>
+                    </div>
 
                     <UsernameMessage username={formValue} isValid={isValid} loading={loading} />
 
 
-                    <button type="submit" className='' disabled={!isValid}>
-                        Choose
-                    </button>
 
-                    <h3>Debug State</h3>
-                    <div>
+  
+                    
+
+                    <h3 className='mt-4'>Debug State</h3>
+                    <div className='text-gray-500'>
                         username: {formValue}
                         <br />
                         Loading: {loading.toString()}
@@ -175,10 +181,10 @@ function UsernameMessage({ username, isValid, loading}) {
         return <p>checking...</p>
 
     } else if (isValid) {
-        return <p>{username} is available</p>
+        return <p> <strong>{username}</strong> is available</p>
 
     } else if (username && !isValid) {
-        return <p>{username} is taken!</p>
+        return <p><strong>{username}</strong> is taken!</p>
     } else {
         return <p></p>
 

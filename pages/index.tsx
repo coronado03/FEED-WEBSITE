@@ -64,7 +64,7 @@ export default function Home(props) {
       <main className='flex flex-col mt-5'>
 
       <div className="card card-info text-white text-center">
-        <h1 className='text-4xl'> <strong>POSTS</strong> </h1>
+        <h1 className='text-4xl'> <strong>POSTS</strong></h1>
 
       </div>
      

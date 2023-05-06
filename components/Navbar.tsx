@@ -29,7 +29,7 @@ export default function Navbar() {
 
                                  <Menu.Items className="absolute right-0 mt-2 w-44 origin-top-right divide-y text-white divide-[#28272A] rounded-md bg-[#1A1A1C] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                                     <Menu.Item>
-                                    <Link href={username}>
+                                    <Link href={`/${username}`}>
 
                                         <button className="group flex w-full items-center rounded-md px-2 py-2 text-center text-sm hover:bg-[#28272A] transition-colors duration-300">User Profile</button>
                                     </Link>

@@ -39,12 +39,6 @@ export default function Home(props) {
 
 
     const cursor = typeof last.createdAt === 'number' ? Timestamp.fromMillis(last.createdAt) : last.createdAt;
-    // const query = firestore
-    //   .collectionGroup('posts')
-    //   .where('published', '==', true)
-    //   .orderBy('createdAt', 'desc')
-    //   .startAfter(cursor)
-    //   .limit(LIMIT);
 
       const ref = collectionGroup(firestore, 'posts');
       const postsQuery = query(

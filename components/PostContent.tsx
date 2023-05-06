@@ -12,10 +12,9 @@ export default function PostContent({ post }) {
 
   }
 
-console.log(getProfilePicture)
 
 
-  console.log(post)
+  //console.log(post)
     const createdAt = typeof post?.createdAt === 'number' ? new Date(post.createdAt) : post.createdAt.toDate();
 
 
@@ -30,7 +29,7 @@ return (
           </Link>{' '}
           <span className="text-sm text-neutral-400">
             Written by{' '}
-            on {createdAt.toISOString()}
+            on {createdAt?.toDateString()}
           </span>
         </div>
 

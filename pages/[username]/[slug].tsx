@@ -35,7 +35,6 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  // Improve my using Admin SDK to select empty docs
   const q = query(
     collectionGroup(getFirestore(), 'posts'),
     limit(20)

@@ -39,12 +39,6 @@ export default function Home(props) {
 
 
     const cursor = typeof last.createdAt === 'number' ? Timestamp.fromMillis(last.createdAt) : last.createdAt;
-    // const query = firestore
-    //   .collectionGroup('posts')
-    //   .where('published', '==', true)
-    //   .orderBy('createdAt', 'desc')
-    //   .startAfter(cursor)
-    //   .limit(LIMIT);
 
       const ref = collectionGroup(firestore, 'posts');
       const postsQuery = query(
@@ -70,7 +64,7 @@ export default function Home(props) {
       <main className='flex flex-col mt-5'>
 
       <div className="card card-info text-white text-center">
-        <h1 className='text-4xl'> <strong>POSTS</strong> </h1>
+        <h1 className='text-4xl'> <strong>POSTS</strong></h1>
 
       </div>
      

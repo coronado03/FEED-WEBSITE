@@ -21,8 +21,6 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -31,7 +29,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/coronado03/FEED-WEBSITE">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="public/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">THE-FEED-WEBSITE</h3>
@@ -71,9 +69,7 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -84,12 +80,11 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://feed-website-coronado03.vercel.app)
 
-The FEED Website is a blogging / social media website intended for everyone involved in the IT Area. The website has a modern simplistic design and it's responsive to all device.
+FEED Website is a user-friendly blogging and social media platform that caters to all individuals engaged in the IT industry. Its modern and simplistic design is optimized to work seamlessly across all devices, ensuring an excellent user experience.
 
-Functionalities:
-* It has a well polished post system, where you can upload images and text.
-* A working heart system for posts.
-* A very easy to use modern and safe authentification system.
+The platform boasts a sophisticated post system that enables users to upload images and text seamlessly. It also features a functional heart system that allows users to show their appreciation for posts they like.
+
+Additionally, FEED Website features a modern and secure authentication system that ensures users' safety while using the platform. It's effortless to use, making it accessible to everyone, regardless of their tech-savviness.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -100,8 +95,8 @@ Functionalities:
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [TAILWINDCSS][https://tailwindcss.com/]
-* [FIREBASE][https://firebase.google.com/]
+* [![Tailwind ][Tailwind]][Tailwind-url]
+* [![Firebase ][Firebase]][Firebase-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -113,7 +108,7 @@ Functionalities:
 <!-- CONTRIBUTING -->
 ## Contributing
 
-I'm always open to communal contributions, and the project will always remain open source.
+I'm always open to communal contributions, and the project will remain open source for the time being.
 
 Follow the following steps if you have something interesting to add!
 
@@ -127,19 +122,10 @@ Follow the following steps if you have something interesting to add!
 
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
-Sebastian Coronado - [Personal Portfolio](https://sebastian-coronado-portfolio.netlify.app/)
+Sebastian Coronado - [Portfolio Website](https://sebastian-coronado-portfolio.netlify.app/)
 
 Project Link: [https://feed-website-coronado03.vercel.app/](https://feed-website-coronado03.vercel.app/)
 
@@ -152,19 +138,15 @@ Project Link: [https://feed-website-coronado03.vercel.app/](https://feed-website
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/coronado03/FEED-WEBSITE?color=44CC11&style=for-the-badge
+[contributors-url]: https://github.com/coronado03/FEED-WEBSITE/network/members
+[forks-shield]: https://img.shields.io/github/forks/coronado03/FEED-WEBSITE?style=for-the-badge
+[forks-url]: https://github.com/coronado03/FEED-WEBSITE/network/members
+[stars-shield]: https://img.shields.io/github/stars/coronado03/FEED-WEBSITE?color=DFB317&style=for-the-badge
+[stars-url]: https://github.com/coronado03/FEED-WEBSITE/stargazers
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: public/logo.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
@@ -181,3 +163,7 @@ Project Link: [https://feed-website-coronado03.vercel.app/](https://feed-website
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Tailwind]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+[Firebase]: https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white
+[Firebase-url]: https://firebase.google.com/

@@ -98,8 +98,8 @@ Functionalities:
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [[Tailwind]][https://tailwindcss.com/]
-* [[Firebase]][https://firebase.google.com/]
+* [![Tailwind][Tailwind]][https://tailwindcss.com/]
+* [![Firebase][Firebase]][https://firebase.google.com/]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

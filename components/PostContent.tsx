@@ -39,13 +39,16 @@ export default function PostContent({ post }) {
 return (
     <div className="flex flex-col mt-5 w-11/12 mx-auto items-center">
       <div className="flex flex-row gap-x-3 self-start">
+
+      <Link href={`/${post.username}/`}> 
         <Image 
-        width={40}
+        width={45}
         height={30}
-        className="rounded-full"
+        className="rounded-full cursor-pointer hover:brightness-110 transition-all ease-in-out duration-75"
         src={profileUrl} 
         alt={post.username + 'profilePhoto'} />
-        
+      </Link>
+
         <div className="flex flex-col">
           <Link href={`/${post.username}/`}>
               <a className="text-info"><b>@{post.username}</b></a>

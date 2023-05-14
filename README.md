@@ -22,7 +22,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -82,12 +81,11 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://feed-website-coronado03.vercel.app)
 
-The FEED Website is a blogging / social media website intended for everyone involved in the IT Area. The website has a modern simplistic design and it's responsive to all device.
+FEED Website is a user-friendly blogging and social media platform that caters to all individuals engaged in the IT industry. Its modern and simplistic design is optimized to work seamlessly across all devices, ensuring an excellent user experience.
 
-Functionalities:
-* It has a well polished post system, where you can upload images and text.
-* A working heart system for posts.
-* A very easy to use modern and safe authentification system.
+The platform boasts a sophisticated post system that enables users to upload images and text seamlessly. It also features a functional heart system that allows users to show their appreciation for posts they like.
+
+Additionally, FEED Website features a modern and secure authentication system that ensures users' safety while using the platform. It's effortless to use, making it accessible to everyone, regardless of their tech-savviness.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -142,15 +140,13 @@ Project Link: [https://feed-website-coronado03.vercel.app/](https://feed-website
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[contributors-url]: https://github.com/coronado03/FEED-WEBSITE/network/members
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/coronado03/FEED-WEBSITE/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/coronado03/FEED-WEBSITE/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[issues-url]: https://github.com/coronado03/FEED-WEBSITE/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: public/logo.png

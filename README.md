@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/coronado03/FEED-WEBSITE">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="public/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">THE-FEED-WEBSITE</h3>
@@ -71,9 +71,7 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -100,8 +98,8 @@ Functionalities:
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [TAILWINDCSS][https://tailwindcss.com/]
-* [FIREBASE][https://firebase.google.com/]
+* [[Tailwind]][https://tailwindcss.com/]
+* [[Firebase]][https://firebase.google.com/]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -113,7 +111,7 @@ Functionalities:
 <!-- CONTRIBUTING -->
 ## Contributing
 
-I'm always open to communal contributions, and the project will always remain open source.
+I'm always open to communal contributions, and the project will remain open source for the time being.
 
 Follow the following steps if you have something interesting to add!
 
@@ -127,19 +125,10 @@ Follow the following steps if you have something interesting to add!
 
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
-Sebastian Coronado - [Personal Portfolio](https://sebastian-coronado-portfolio.netlify.app/)
+Sebastian Coronado - [Portfolio Website](https://sebastian-coronado-portfolio.netlify.app/)
 
 Project Link: [https://feed-website-coronado03.vercel.app/](https://feed-website-coronado03.vercel.app/)
 
@@ -164,7 +153,7 @@ Project Link: [https://feed-website-coronado03.vercel.app/](https://feed-website
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: public/logo.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
@@ -181,3 +170,5 @@ Project Link: [https://feed-website-coronado03.vercel.app/](https://feed-website
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Tailwind]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Firebase]: https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white

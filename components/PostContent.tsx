@@ -1,17 +1,35 @@
-import { collection, getDocs, getFirestore, onSnapshot, query, where } from "firebase/firestore";
+import { collection, getDocs, getFirestore, limit, onSnapshot, query, where } from "firebase/firestore";
+import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-
 
 export default function PostContent({ post }) {
   const db = getFirestore()
-  let getProfilePicture = async () => {
-    const userRef = query(collection(db, "users"), where("username", "==", post.username))
-    const querySnapshot = await getDocs(userRef);
-    return querySnapshot;
+  const [profileUrl, setProfileUrl] = useState();
+  
+  useEffect(()=> {
+    const getProfilePicture = async () => {
+      try {
+        const userRef = query(collection(db, "users"), where("username", "==", post.username), limit(1))
+        const userSnap = await getDocs(userRef);
 
-  }
+        if (userSnap?.docs[0]) {
+          const userData = userSnap.docs[0].data()
+          setProfileUrl(userData.photoURL)
+        }
+      }
+  
+      catch(error) {
+        console.log(`An error has occured: ${error.name} ${error.message}`)
+      }
+    }
 
+
+    getProfilePicture();
+    console.log(profileUrl)
+    
+  }, [db, post.username, profileUrl])
 
 
   //console.log(post)
@@ -21,8 +39,16 @@ export default function PostContent({ post }) {
 return (
     <div className="flex flex-col mt-5 w-11/12 mx-auto items-center">
       <div className="flex flex-row gap-x-3 self-start">
-        <img className="w-10 rounded-full"  src=""/>
-        
+
+      <Link href={`/${post.username}/`}> 
+        <Image 
+        width={45}
+        height={30}
+        className="rounded-full cursor-pointer hover:brightness-110 transition-all ease-in-out duration-75"
+        src={profileUrl} 
+        alt={post.username + 'profilePhoto'} />
+      </Link>
+
         <div className="flex flex-col">
           <Link href={`/${post.username}/`}>
               <a className="text-info"><b>@{post.username}</b></a>

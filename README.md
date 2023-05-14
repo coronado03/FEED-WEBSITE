@@ -21,7 +21,6 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -96,8 +95,8 @@ Additionally, FEED Website features a modern and secure authentication system th
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Tailwind][Tailwind]][https://tailwindcss.com/]
-* [![Firebase][Firebase]][https://firebase.google.com/]
+* [Tailwind]
+* [Firebase]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -139,14 +138,12 @@ Project Link: [https://feed-website-coronado03.vercel.app/](https://feed-website
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/coronado03/FEED-WEBSITE?color=44CC11&style=for-the-badge
 [contributors-url]: https://github.com/coronado03/FEED-WEBSITE/network/members
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/coronado03/FEED-WEBSITE?style=for-the-badge
 [forks-url]: https://github.com/coronado03/FEED-WEBSITE/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/coronado03/FEED-WEBSITE?color=DFB317&style=for-the-badge
 [stars-url]: https://github.com/coronado03/FEED-WEBSITE/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/coronado03/FEED-WEBSITE/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: public/logo.png

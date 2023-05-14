@@ -95,8 +95,8 @@ Additionally, FEED Website features a modern and secure authentication system th
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [Tailwind]
-* [Firebase]
+* [![Tailwind ][Tailwind]][Tailwind-url]
+* [![Firebase ][Firebase]][Firebase-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -164,4 +164,6 @@ Project Link: [https://feed-website-coronado03.vercel.app/](https://feed-website
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
 [Tailwind]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
 [Firebase]: https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white
+[Firebase-url]: https://firebase.google.com/

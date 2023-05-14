@@ -1,4 +1,5 @@
 import { collection, getDocs, getFirestore, limit, onSnapshot, query, where } from "firebase/firestore";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
@@ -38,7 +39,12 @@ export default function PostContent({ post }) {
 return (
     <div className="flex flex-col mt-5 w-11/12 mx-auto items-center">
       <div className="flex flex-row gap-x-3 self-start">
-        <img className="w-10 rounded-full"  src={profileUrl}/>
+        <Image 
+        width={40}
+        height={30}
+        className="rounded-full"
+        src={profileUrl} 
+        alt={post.username + 'profilePhoto'} />
         
         <div className="flex flex-col">
           <Link href={`/${post.username}/`}>

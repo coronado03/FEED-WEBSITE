@@ -5,13 +5,13 @@ import { GoogleAuthProvider } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-    apiKey: process.env.FIREBASE_API_KEY,
-    authDomain: process.env.AUTH_DOMAIN,
-    projectId: process.env.PROJECT_ID,
-    storageBucket: process.env.STORAGE_BUCKET,
-    messagingSenderId: process.env.MESSAGING_SENDER_ID,
-    appId: process.env.APP_ID,
-    measurementId: process.env.MEASUREMENT_ID
+    apiKey: "AIzaSyDW7fuEX_hhXhSs3btBl-7AKUTrU3PzonU",
+    authDomain: "nextfire-26a86.firebaseapp.com",
+    projectId: "nextfire-26a86",
+    storageBucket: "nextfire-26a86.appspot.com",
+    messagingSenderId: "431021056374",
+    appId: "1:431021056374:web:d8fe8b0f99021e66429a57",
+    measurementId: "G-46LHZKYQSE"
   };
 
 

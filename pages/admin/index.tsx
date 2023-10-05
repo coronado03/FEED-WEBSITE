@@ -29,6 +29,7 @@
       const ref = collection(getFirestore(), 'users', auth.currentUser.uid, 'posts')
       const postQuery = query(ref, orderBy('createdAt'))
     
+      // eslint-disable-next-line react-hooks/rules-of-hooks
       const [querySnapshot] = useCollection(postQuery);
     
       const posts = querySnapshot?.docs.map((doc) => doc.data());

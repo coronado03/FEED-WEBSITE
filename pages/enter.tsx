@@ -14,10 +14,10 @@ export default function EnterPage (props) {
     
     const router = useRouter()
 
-    //Redirects to home at log in. WIP
-    //if (user) {
-    //   router.push("/")
-    //}
+    useEffect(()=>{
+        if (username && user) 
+            router.push('/')
+    },[username, user])
 
     return(
         <main>
@@ -139,14 +139,14 @@ function UsernameForm() {
     return (
         !username && (
             <section className='flex flex-col items-center text-white mt-5'>
-                <h3 className='text-4xl'><strong>Choose username</strong></h3>
+                <h3 className='text-4xl'><strong>Choose Username</strong></h3>
                 <form className="mt-5" onSubmit={onSubmit}>
 
-                    <div className='flex flex-row gap-x-5'>
-                        <input className='text-black' name="username" placeholder="username" value={formValue} onChange={onChange} />
-
-                        <button type="submit" className={''} disabled={!isValid}>
-                            Choose
+                    <div className='flex flex-col md:flex-row gap-x-5 mt-10'>
+                        <input className='text-black focus:outline-none p-4' name="username" placeholder="username" value={formValue} onChange={onChange} />
+                        
+                        <button type="submit" className={`transition-all ease-in-out delay-75 ${isValid ? "" : "text-gray-500"}`} disabled={!isValid}>
+                            Accept Username
                         </button>
                     </div>
 

@@ -7,7 +7,7 @@ import PostFeed from "../components/PostFeed";
 import { firestore, postToJson } from "../lib/firebase";
 
 // Max post to query per page
-const LIMIT: number = 10;
+const LIMIT: number = 5;
 
 export async function getServerSideProps(context) {
 

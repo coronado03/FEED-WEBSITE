@@ -6,8 +6,12 @@ import ReactMarkdown from "react-markdown";
 
 export default function PostContent({ post }) {
   const db = getFirestore()
-  const [profileUrl, setProfileUrl] = useState();
-  
+  const [ profileUrl, setProfileUrl ] = useState<string>('');
+
+  const handleProfilePhotoError = () => {
+    setProfileUrl('/images/defaultprofileimage.jpg')  
+  }
+
   useEffect(()=> {
     const getProfilePicture = async () => {
       try {
@@ -25,11 +29,9 @@ export default function PostContent({ post }) {
       }
     }
 
-
-    getProfilePicture();
-    console.log(profileUrl)
-    
-  }, [db, post.username, profileUrl])
+      getProfilePicture();
+  
+  }, [post.username])
 
 
   //console.log(post)
@@ -46,6 +48,7 @@ return (
         height={30}
         className="rounded-full cursor-pointer hover:brightness-110 transition-all ease-in-out duration-75"
         src={profileUrl} 
+        onError={handleProfilePhotoError} 
         alt={post.username + 'profilePhoto'} />
       </Link>
 
